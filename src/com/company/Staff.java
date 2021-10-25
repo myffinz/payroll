@@ -1,7 +1,7 @@
 package com.company;
 
-public class Staff {
-
+public class Staff implements PaymentInterface{
+    
     private String name;
     private int baseSalary;
     private int overtimeHour;
@@ -45,7 +45,7 @@ public class Staff {
         this.overtimeHour = overtimeHour;
         this.overtimeRate = overtimeRate;
     }
-
+    @Override
     public int getPayment(){
         int payment = this.baseSalary + (this.overtimeHour * this. overtimeRate);
         return payment;

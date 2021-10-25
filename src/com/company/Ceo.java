@@ -22,11 +22,11 @@ public class Ceo extends Staff {
     }
 
     public Ceo(String name, int baseSalary, int overtimeHour, int overtimeRate) {
-        super(name, baseSalary, overtimeHour, overtimeRate);
+        super(name, baseSalary, 0, 0);
     }
 
     public Ceo(String name, int baseSalary, int overtimeHour, int overtimeRate, int expYear, int expRate) {
-        super(name, baseSalary, overtimeHour, overtimeRate);
+        super(name, baseSalary, 0, 0);
         this.expYear = expYear;
         this.expRate = expRate;
     }
