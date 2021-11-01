@@ -20,7 +20,7 @@ public class Electricity implements PaymentInterface{
     public void setElectricityRate(int electricityRate) {
         this.electricityRate = electricityRate;
     }
-
+    @Override
     public String getName() {
         return "Electricity";
     }

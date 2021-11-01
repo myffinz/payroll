@@ -5,7 +5,7 @@ public class Internet implements PaymentInterface{
     private int numSubscription;
     private int subRate;
 
-    
+    @Override
     public String getName() {
         return "Internet";
     }

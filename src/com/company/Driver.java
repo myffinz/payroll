@@ -1,11 +1,16 @@
 package com.company;
 
-public class Driver {
+public class Driver implements PaymentInterface{
+    private String name;
     private int dayCount;
     private int dayRate;
 
+    public String getName(){
+        return this.name;
+    }
+
     public int getDayCount() {
-        return dayCount;
+        return this.dayCount;
     }
 
     public void setDayCount(int dayCount) {
@@ -13,14 +18,15 @@ public class Driver {
     }
 
     public int getDayRate() {
-        return dayRate;
+        return this.dayRate;
     }
 
     public void setTripRate(int dayRate) {
         this.dayRate = dayRate;
     }
 
-    public Driver(int dayCount, int dayRate) {
+    public Driver(String name, int dayCount, int dayRate) {
+        this.name = name;
         this.dayCount = dayCount;
         this.dayRate = dayRate;
     }
