@@ -10,6 +10,7 @@ public class Main {
         Developer dev1 = new Developer("Korn", 40000, 10, 500, 12, 1000);
         Ceo ceo1 = new Ceo("Bill", 100000, 2, 500, 5, 10000);
         Staff marketing1 = new Staff("Sara", 25000, 12, 500);
+        Cleaner cleaner1 = new Cleaner("Player1", 50, 122);
 
         int totalPayment = 0;
 
