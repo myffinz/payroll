@@ -1,13 +1,13 @@
 package com.company;
 
-public class InternetAccess implements PaymentInterface{
+public class Internet implements PaymentInterface{
 
     private int numSubscription;
     private int subRate;
 
     
     public String getName() {
-        return "Internet Access";
+        return "Internet";
     }
 
     public int getNumSubscription() {
@@ -26,7 +26,7 @@ public class InternetAccess implements PaymentInterface{
         this.subRate = subRate;
     }
 
-    public InternetAccess(int numSubscription, int subRate) {
+    public Internet(int numSubscription, int subRate) {
         this.numSubscription = numSubscription;
         this.subRate = subRate;
     }
